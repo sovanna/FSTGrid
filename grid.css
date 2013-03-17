@@ -1,0 +1,209 @@
+/*
+* FSTGrid V1.2
+* Copyright 2013, Sovanna Hing
+* www.fullstackdeveloper.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 17/03/2013
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid 12col
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+/* #Base 960 Grid 12col
+================================================== */
+    .row {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .onecol,
+    .twocol,
+    .threecol,
+    .fourcol,
+    .fivecol,
+    .sixcol,
+    .sevencol,
+    .eightcol,
+    .ninecol,
+    .tencol,
+    .elevencol,
+    .one-thirdcol,
+    .one-halfcol {
+        float: left;
+        margin-right: 3.8%;
+        min-height: 1px;
+    }
+
+    .row .onecol {
+        width: 4.85%;
+    }
+
+    .row .twocol {
+        width: 13.45%;
+    }
+
+    .row .threecol {
+        width: 22.05%;
+    }
+
+    .row .fourcol {
+        width: 30.75%;
+    }
+
+    .row .fivecol {
+        width: 39.45%;
+    }
+
+    .row .sixcol {
+        width: 48%;
+    }
+
+    .row .sevencol {
+        width: 56.75%;
+    }
+
+    .row .eightcol {
+        width: 65.4%;
+    }
+
+    .row .ninecol {
+        width: 74.05%;
+    }
+
+    .row .tencol {
+        width: 82.7%;
+    }
+
+    .row .elevencol {
+        width: 91.35%;
+    }
+
+    .row .twelvecol {
+        width: 100%;
+        float: left;
+    }
+
+    .row .one-thirdcol {
+        width: 30.8%;
+    }
+
+    .row .one-halfcol {
+        width: 48.1%;
+    }
+
+    .row .twelvecol.center {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .last {
+        margin-right: 0px;
+    }
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        
+    }
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media handheld, only screen and (max-width: 767px) {
+    
+        .row, body {
+            width: 100%;
+            min-width: 0;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        .row .onecol,
+        .row .twocol,
+        .row .threecol,
+        .row .fourcol,
+        .row .fivecol,
+        .row .sixcol,
+        .row .sevencol,
+        .row .eightcol,
+        .row .ninecol,
+        .row .tencol,
+        .row .elevencol,
+        .row .twelvecol,
+        .row .one-thirdcol,
+        .row .one-halfcol {
+            width: auto;
+            float: none;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        
+    }
+
+
+/* #Clearing
+================================================== */
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+    .row:after,
+    .clearfix:after {
+        clear: both;
+    }
+
+    .row,
+    .clearfix {
+        zoom: 1;
+    }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
