@@ -165,7 +165,7 @@
 /* #Links
 ================================================== */
 	a, a:link, a:visited, a:active {
-		color: #111;
+		color: #444;
 		text-decoration: underline;
 		outline: 0;
 	}
